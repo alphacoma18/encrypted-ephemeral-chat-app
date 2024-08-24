@@ -1,11 +1,13 @@
 {
 	"name": "back-end",
-	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "tsx watch ./server.ts"
 	},
 	"dependencies": {
 		"socket.io": "^4.7.5"
 	},
-	"type": "module"
+	"type": "module",
+	"devDependencies": {
+		"tsx": "^4.17.0"
+	}
 }
