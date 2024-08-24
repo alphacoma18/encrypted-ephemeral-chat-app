@@ -1,0 +1,11 @@
+{
+	"name": "front-end",
+	"scripts": {
+		"dev": "vite"
+	},
+	"devDependencies": {
+		"socket.io-client": "^4.7.5",
+		"vite": "^5.4.2"
+	},
+	"type": "module"
+}
