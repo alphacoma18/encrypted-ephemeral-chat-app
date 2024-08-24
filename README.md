@@ -6,6 +6,7 @@
 - Vite
 - Node.js
 - Socket.io
+- TypeScript
 
 ## Frontend & Backend
 

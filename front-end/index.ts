@@ -1,8 +1,8 @@
 import io from 'socket.io-client';
 const socket = io('ws://localhost:3000');
 
-const messagesDiv = document.getElementById('messages');
-const form = document.getElementById('form');
+const messagesDiv = document.getElementById('messages') as HTMLDivElement;
+const form = document.getElementById('form') as HTMLFormElement;
 
 function promptForName() {
     const name = prompt('Enter your name');
@@ -15,14 +15,9 @@ function promptForName() {
 
 const name = promptForName();
 
-if (!form) {
-    alert('Form not found');
-    throw new Error('Form not found');
-}
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const textarea = document.getElementById('textarea');
+    const textarea = document.getElementById('textarea') as HTMLTextAreaElement;
     const message = name + ': ' + textarea.value;
     console.log('name:', name);
     textarea.value = '';
