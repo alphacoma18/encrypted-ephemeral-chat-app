@@ -8,11 +8,13 @@
 - Socket.io
 - TypeScript
 
-## Frontend & Backend
+## Frontend
 
 ### Installation
 
 ```bash
+cd front-end
+
 pnpm install
 ```
 
@@ -20,4 +22,20 @@ pnpm install
 
 ```bash
 pnpm dev
+```
+
+## Backend
+
+### Installation
+
+```bash
+cd back-end
+
+pnpm install
+```
+
+### Development
+
+```bash
+pnpm start
 ```
